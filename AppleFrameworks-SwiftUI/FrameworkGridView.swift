@@ -10,12 +10,43 @@ import SwiftUI
 struct FrameworkGridView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("AppleFrameworks-SwiftUI")
+            HStack {
+                VStack {
+                    Image("app-clip")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80, height: 80)
+                    Text("App Clips")
+                        .font(.system(size: 24))
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                }
+                VStack {
+                    Image("app-clip")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80, height: 80)
+                    Text("App Clips")
+                        .font(.system(size: 24))
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                }
+                VStack {
+                    Image("app-clip")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80, height: 80)
+                    Text("App Clips")
+                        .font(.system(size: 24))
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                }
+
+            }
+            Spacer()
+             
         }
-        .padding()
+    
     }
 }
 
