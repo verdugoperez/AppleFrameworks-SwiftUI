@@ -11,6 +11,7 @@
 		8373A5D22A9D6CCF007A7BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373A5D12A9D6CCF007A7BE5 /* ContentView.swift */; };
 		8373A5D42A9D6CD0007A7BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8373A5D32A9D6CD0007A7BE5 /* Assets.xcassets */; };
 		8373A5D72A9D6CD0007A7BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8373A5D62A9D6CD0007A7BE5 /* Preview Assets.xcassets */; };
+		8373A5DE2A9D6D97007A7BE5 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373A5DD2A9D6D97007A7BE5 /* Framework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8373A5D12A9D6CCF007A7BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8373A5D32A9D6CD0007A7BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8373A5D62A9D6CD0007A7BE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8373A5DD2A9D6D97007A7BE5 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				8373A5CF2A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift */,
+				8373A5DD2A9D6D97007A7BE5 /* Framework.swift */,
 				8373A5D12A9D6CCF007A7BE5 /* ContentView.swift */,
 				8373A5D32A9D6CD0007A7BE5 /* Assets.xcassets */,
 				8373A5D52A9D6CD0007A7BE5 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8373A5D22A9D6CCF007A7BE5 /* ContentView.swift in Sources */,
+				8373A5DE2A9D6D97007A7BE5 /* Framework.swift in Sources */,
 				8373A5D02A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
