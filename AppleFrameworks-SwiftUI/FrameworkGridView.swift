@@ -8,45 +8,33 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    Image("app-clip")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
-                    Text("App Clips")
-                        .font(.system(size: 24))
-                        .minimumScaleFactor(0.5)
-                        .lineLimit(1)
-                }
-                VStack {
-                    Image("app-clip")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
-                    Text("App Clips")
-                        .font(.system(size: 24))
-                        .minimumScaleFactor(0.5)
-                        .lineLimit(1)
-                }
-                VStack {
-                    Image("app-clip")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
-                    Text("App Clips")
-                        .font(.system(size: 24))
-                        .minimumScaleFactor(0.5)
-                        .lineLimit(1)
-                }
+    @State private var isPresentingSheet = false
 
-            }
-            Spacer()
-             
+    var body: some View {
+        
+        let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+        
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks) { framework in
+                        Button {
+                            isPresentingSheet.toggle()
+                        } label: {
+                            FrameworkTitleView(name: framework.name, imageName: framework.imageName).sheet(isPresented: $isPresentingSheet) {
+                                DetailView(imageName: framework.imageName, name: framework.name, description: framework.description)
+                            }
+                        }.buttonStyle(.plain)
+
+                    }
+                }
+            }.navigationTitle("🍎 Frameworks")
         }
-    
+        
     }
 }
 
