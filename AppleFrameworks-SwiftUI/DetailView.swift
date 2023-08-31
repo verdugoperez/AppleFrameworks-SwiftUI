@@ -25,11 +25,11 @@ struct DetailView: View {
                 }.buttonStyle(.plain)
             }
             FrameworkTitleView(name: framework?.name ?? "", imageName: framework?.imageName ?? "").padding(.bottom, 16)
-            Text(framework?.description ?? "").multilineTextAlignment(.leading)
+            ScrollView {
+                Text(framework?.description ?? "").multilineTextAlignment(.leading)
+            }
             Spacer()
-            Button {
-                print(framework?.name ?? "")
-            } label: {
+            Link(destination: URL(string: framework?.urlString ?? "")!) {
                 Text("Learn More")
                     .font(.title2)
                     .frame(width: 280, height: 50)
