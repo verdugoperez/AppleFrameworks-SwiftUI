@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8347176D2AA005B300455F45 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347176C2AA005B300455F45 /* FrameworkGridViewModel.swift */; };
 		834C13C52A9EA272001AA617 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834C13C42A9EA272001AA617 /* FrameworkTitleView.swift */; };
 		8373A5D02A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373A5CF2A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift */; };
 		8373A5D22A9D6CCF007A7BE5 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373A5D12A9D6CCF007A7BE5 /* FrameworkGridView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8347176C2AA005B300455F45 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		834C13C42A9EA272001AA617 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		8373A5CC2A9D6CCF007A7BE5 /* AppleFrameworks-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleFrameworks-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8373A5CF2A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworks_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -60,10 +62,11 @@
 				8373A5CF2A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift */,
 				8373A5DD2A9D6D97007A7BE5 /* Framework.swift */,
 				8373A5D12A9D6CCF007A7BE5 /* FrameworkGridView.swift */,
+				8347176C2AA005B300455F45 /* FrameworkGridViewModel.swift */,
+				83B5560B2A9EB881008E4192 /* DetailView.swift */,
 				834C13C42A9EA272001AA617 /* FrameworkTitleView.swift */,
 				8373A5D32A9D6CD0007A7BE5 /* Assets.xcassets */,
 				8373A5D52A9D6CD0007A7BE5 /* Preview Content */,
-				83B5560B2A9EB881008E4192 /* DetailView.swift */,
 			);
 			path = "AppleFrameworks-SwiftUI";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				834C13C52A9EA272001AA617 /* FrameworkTitleView.swift in Sources */,
 				83B5560C2A9EB881008E4192 /* DetailView.swift in Sources */,
 				8373A5D02A9D6CCF007A7BE5 /* AppleFrameworks_SwiftUIApp.swift in Sources */,
+				8347176D2AA005B300455F45 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

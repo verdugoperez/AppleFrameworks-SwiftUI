@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    @State private var isPresentingSheet = false
+    @StateObject var viewModel = FrameworkGridViewModel()
 
     var body: some View {
         
@@ -22,17 +22,15 @@ struct FrameworkGridView: View {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { framework in
-                        Button {
-                            isPresentingSheet.toggle()
-                        } label: {
-                            FrameworkTitleView(name: framework.name, imageName: framework.imageName).sheet(isPresented: $isPresentingSheet) {
-                                DetailView(imageName: framework.imageName, name: framework.name, description: framework.description)
-                            }
-                        }.buttonStyle(.plain)
+                        FrameworkTitleView(name: framework.name, imageName: framework.imageName).onTapGesture {
+                            viewModel.selectedFramework = framework
+                        }
 
                     }
                 }
-            }.navigationTitle("🍎 Frameworks")
+            }.navigationTitle("🍎 Frameworks").sheet(isPresented: $viewModel.isShowingDetailView) {
+                DetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView)
+            }
         }
         
     }
