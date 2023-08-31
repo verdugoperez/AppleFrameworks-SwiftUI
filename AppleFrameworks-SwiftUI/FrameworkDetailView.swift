@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct FrameworkDetailView: View {
     var framework: Framework?
     @Binding var isShowingDetailView: Bool
     
@@ -46,7 +46,7 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         let framework = Framework(name: "App clip", imageName: "app-clip", urlString: "", description: "lorem")
-        DetailView(framework: framework, isShowingDetailView: .constant(false))
+        FrameworkDetailView(framework: framework, isShowingDetailView: .constant(false))
     }
 }
 
